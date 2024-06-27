@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Person</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Interactive Person</h1>
+    </header>
+    <section id="character">
+        <div class="person">
+            <div class="head"></div>
+            <div class="body"></div>
+            <div class="left-arm"></div>
+            <div class="right-arm"></div>
+            <div class="left-leg"></div>
+            <div class="right-leg"></div>
+        </div>
+        <button onclick="wave()">Wave</button>
+    </section>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
